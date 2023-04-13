@@ -15,7 +15,30 @@
 --address-color: #434455;
 --text-light: #F4F4FD;
 --background-color-heder-footer: #2e2f42;
+}
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-top: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
 }
 
 .list {
@@ -31,11 +54,21 @@ body {
     color: var(--block-text-color);
     background-color: var(--main-background-color);
 }
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 /* ==========================COMPONENTS========================== */
 .modal-btn {
         font-family: "Roboto", sans-serif;
-    font-weight: 500;
+        font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         display: flex;
@@ -43,7 +76,12 @@ body {
         letter-spacing: 0.04em;
         background: var(--background-btn-color);
         color: var(--text-btn-color);
-        cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        padding: 16px 32px 16px 32px;
+
 }
 
 .modal-btn:hover,
@@ -58,6 +96,7 @@ body {
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--main-text-color);
+        margin-bottom: 72px;
 }
 
 .center {
@@ -70,6 +109,7 @@ body {
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--main-text-color);
+        margin-bottom: 8px;
 }
 
 .block-text {
@@ -81,7 +121,26 @@ body {
 
 /* ==========================/COMPONENTS========================== */
 
-/* ==========================HEDER========================== */
+/* ==========================HEADER========================== */
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.page-nav {
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
 .logo {
 font-family: var(--logo-font);
     font-weight: 800;
@@ -92,6 +151,7 @@ font-family: var(--logo-font);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-color);
+    margin-right: 76px;
 }
 
 .logo-part-heder {
@@ -102,7 +162,15 @@ color: var(--main-text-color);
     color: #f4f4fd;
 }
 
-.menu-item,
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.main-address {
+    margin-left: auto;
+}
+
+.menu-link,
 .address-mail-phone {
         font-weight: 500;
         font-size: 16px;
@@ -111,9 +179,9 @@ color: var(--main-text-color);
         color: var(--main-text-color);
 }
 
-.menu-item:active,
-.menu-item:hover,
-.menu-item:focus,
+.menu-link:active,
+.menu-link:hover,
+.menu-link:focus,
 .address-mail-phone:active,
 .address-mail-phone:hover,
 .address-mail-phone:focus {
@@ -124,43 +192,119 @@ color: var(--main-text-color);
         font-style: normal;
 }
 
+.address-container {
+    display: flex;
+}
+
 .address-mail-phone {
     font-style: normal;
         font-weight: 400;
         color: var(--address-color);
 }
-/* ==========================/HEDER========================== */
+/* ==========================/HEADER========================== */
 
 /* ==========================HERO========================== */
 .hero {
     background-color: var(--background-color-heder-footer);
 }
 
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 188px;
+    padding-top:  188px;
+}
 .main-title {
     font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
-        text-align: center;
         letter-spacing: 0.02em;    
         color: var(--main-title-color);
+        display: flex;
+        width: 496px;
+        margin-bottom: 48px;
 }
 /* ==========================/HERO========================== */
 
 /* ==========================ADVANTAGES========================== */
+.advantages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.block-ad-item {
+    width: 264px;
+}
+
+
 
 /* ==========================/ADVANTAGES========================== */
 
+/* ==========================WHAT ARE WE DOING========================== */
+.our-work-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.our-work-item {
+    width: 360px;
+}
+
+.our-work {
+    padding-top: 0;
+}
+
+/* ==========================/WHAT ARE WE DOING========================== */
 
 /* ==========================OUR TEAM========================== */
+.our-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.team-names {
+    margin-top: 32px;
+}
+
 .our-team {
     background-color: #F4F4FD
 }
-/* ==========================/OUR TEAM========================== */
+
 .block-item {
     background-color: #FFFFFF;
+        width: calc((100% - 72px) / 4);
 }
+
+/* ==========================/OUR TEAM========================== */
+
 /* ==========================FOOTER========================== */
+.footer-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-footer {
+margin-bottom: 16px;
+}
+
+.text-footer {
+    width: 264px;
+}
+
 .footer {
     background-color: var(--background-color-heder-footer);
 }
@@ -168,10 +312,22 @@ color: var(--main-text-color);
 .text-light {
     color: var(--text-light);
 }
+
 /* ==========================FOOTER========================== */
 
 /* ==========================PORTFOLIO-BUTTOM SECTION========================== */
 /* COMPONENTS */
+.btn-section {
+    padding-top: 96px;
+}
+
+.btn-container-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 84px;
+}
+
 .choose-btn {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -185,7 +341,10 @@ color: var(--main-text-color);
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    cursor: pointer;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    align-items: center;
+    padding: 12px 24px 12px 24px;
 }
 
 .choose-btn:hover,
@@ -194,5 +353,44 @@ color: var(--main-text-color);
     background: #404BBF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+.foto-container {
+    display: flex;
+}
+
+.foto-container-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.foto-container-list-item {
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 3;
+}
+
+.foto-collection-name {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border: 1px solid #E7E9FC;}
+
+/* .our-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.team-names {
+    margin-top: 32px;
+}
+
+.our-team {
+    background-color: #F4F4FD
+}
+
+.block-item {
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+} */
 
 /* ==========================/PORTFOLIO-BUTTOM SECTION========================== */
