@@ -375,7 +375,9 @@ display: flex;
 
 .foto-collection-name {
         border-top: none;
-        border: 0.5px solid #E7E9FC;
+        border-right: 0.5px solid #E7E9FC;
+        border-left: 0.5px solid #E7E9FC;
+        border-bottom: 0.5px solid #E7E9FC;
         padding: 32px 16px;
 }
 /* ==========================/PORTFOLIO-BUTTOM SECTION========================== */
