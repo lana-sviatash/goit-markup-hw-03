@@ -35,6 +35,7 @@ ol {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 button {
@@ -266,6 +267,13 @@ color: var(--main-text-color);
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    padding: 0;
+    list-style: none;
+}
+
+.block-item {
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
 }
 
 .team-names {
@@ -274,11 +282,6 @@ color: var(--main-text-color);
 
 .our-team {
     background-color: #F4F4FD
-}
-
-.block-item {
-    background-color: #FFFFFF;
-        width: calc((100% - 72px) / 4);
 }
 
 /* ==========================/OUR TEAM========================== */
@@ -361,11 +364,10 @@ display: flex;
     list-style: none;
     margin-right: -24px;
     margin-bottom: -48px;
+    
 }
 
 .foto-container-list-item {
-    /* background-color: #FFFFFF;
-    width: calc((100% - 72px) / 3; */
     margin-bottom: 48px;
         margin-right: 24px;
         width: 360px;
@@ -375,5 +377,5 @@ display: flex;
         border-top: none;
         border: 0.5px solid #E7E9FC;
         padding: 32px 16px;
-
+}
 /* ==========================/PORTFOLIO-BUTTOM SECTION========================== */
