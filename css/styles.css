@@ -84,7 +84,7 @@ h3,
 h4,
 p {
     margin-top: 0;
-    margin-top: 0;
+    margin-bottom: 0;
 }
 
 ul,
@@ -120,6 +120,7 @@ body {
 }
 .container {
     width: 1158px;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -131,20 +132,21 @@ body {
 
 /* ==========================COMPONENTS========================== */
 .modal-btn {
-        font-family: var(--font-main);
-        font-weight: var(--font-weight-btn);
-        font-size: var(--font-size-btn);
-        line-height: var(--font-size-btn);
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.04em;
-        background: var(--color-btn-background-main-page);
-        color: var(--color-btn-text-main-page);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        padding: 16px 32px 16px 32px;
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-btn);
+    font-size: var(--font-size-btn);
+    line-height: var(--font-size-btn);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    border: transparent;
+    background: var(--color-btn-background-main-page);
+    color: var(--color-btn-text-main-page);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 16px 32px 16px 32px;
 
 }
 
@@ -154,13 +156,13 @@ body {
 }
 
 .block-title {
-    font-weight: var(--font-size-h2);
-        font-size: var(--font-size-h2);
-        line-height: var(--line-height-h2);
-        letter-spacing: var(--letter-spacing-main);
-        text-transform: capitalize;
-        color: var(--color-text-h2-h3-titles);
-        margin-bottom: 72px;
+    font-weight: var(--font-weight-h2);
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
+    letter-spacing: var(--letter-spacing-main);
+    text-transform: capitalize;
+    color: var(--color-text-h2-h3-titles);
+    margin-bottom: 72px;
 }
 
 .center {
@@ -169,26 +171,26 @@ body {
 
 .block-item-title {
     font-weight: var(--font-weight-h3);
-        font-size: var(--font-size-h3);
-        line-height: var(--line-height-h3);
-        letter-spacing: var(--letter-spacing-main);
-        color: var(--color-text-h2-h3-titles);
-        margin-bottom: 8px;
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3);
+    letter-spacing: var(--letter-spacing-main);
+    color: var(--color-text-h2-h3-titles);
+    margin-bottom: 8px;
 }
 
 .block-text {
-        font-size: var(--font-size-text);
-        line-height: var(--line-height-text);
-        letter-spacing: var(--letter-spacing-main);
-        color: var(--color-text-h2-h3-titles);
+    font-size: var(--font-size-text);
+    line-height: var(--line-height-text);
+    letter-spacing: var(--letter-spacing-main);
+    color: var(--color-text-h2-h3-titles);
 }
 
 /* ==========================/COMPONENTS========================== */
 
 /* ==========================HEADER========================== */
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
     border: 1px solid var(--color-border-header);
 }
 
@@ -201,13 +203,20 @@ body {
     display: flex;
 }
 
+.logo,
+.menu-link,
+.address-mail-phone {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .menu{
     display: flex;
     align-items: center;
 }
 
 .logo {
-font-family: var(--font-logo);
+    font-family: var(--font-logo);
     font-weight: var(--font-weight-logo);
     font-size: var(--font-size-logo);
     line-height: var(--line-height-logo);
@@ -237,11 +246,15 @@ color: var(--color-text-h2-h3-titles);
 
 .menu-link,
 .address-mail-phone {
-        font-weight: var(--font-weight-address);
-        font-size: var(--font-size-address);
-        line-height: var(--line-height-address);
-        letter-spacing: var(--letter-spacing-main);
-        color: var(--color-address);
+    font-weight: var(--font-weight-address);
+    font-size: var(--font-size-address);
+    line-height: var(--line-height-address);
+    letter-spacing: var(--letter-spacing-main);
+    color: var(--color-address);
+}
+
+.menu-link {
+    font-weight: var(--font-weight-nav);
 }
 
 .menu-link:active,
@@ -341,7 +354,11 @@ color: var(--color-text-h2-h3-titles);
 }
 
 .team-names {
-    margin-top: 32px;
+    padding: 32px 16px;
+}
+
+.team-block-item-title {
+    margin-bottom: 8px;
 }
 
 .our-team {
