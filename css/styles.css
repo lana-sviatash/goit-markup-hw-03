@@ -55,25 +55,6 @@
 --letter-spacing-main: 0.02em;
 --letter-spacing-btn: 0.04em;
 
-
-/* --main-font: 'Roboto',
-    sans-serif;
---logo-font: 'Raleway',
-    sans-serif; */
-/* --main-background-color: #FFFFFF; */
-/* --main-title-color: #FFFFFF;
---logo-color: #4d5ae5;
---main-text-color: #2e2f42; */
-/* --block-text-color: #434455; */
-/* --background-btn-color: #4D5AE5;
---text-btn-color: #FFFFFF; */
-/* --background-btn-color-accent: #404BBF; */
-/* --nav-item-color-accent: #404BBF;
---address-color: #434455; */
-/* --text-light: #F4F4FD;
---background-color-heder-footer: #2e2f42; */
-}
-
 /* ==========================/VARIABLES========================== */
 
 /* ==========================RESETS AND ELEMENTS STYLES========================== */
@@ -189,8 +170,6 @@ body {
 
 /* ==========================HEADER========================== */
 .header {
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
     border: 1px solid var(--color-border-header);
 }
 
